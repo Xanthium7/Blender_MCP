@@ -9,7 +9,7 @@ nest_asyncio.apply()  # Needed to run interactive python
 Make sure:
 1. The server is running before running this script.
 2. The server is configured to use SSE transport.
-3. The server is listening on port 8050.
+3. The server is listening on port 8000.
 
 To run the server:
 uv run server.py
@@ -29,7 +29,7 @@ async def main():
             for tool in tools_result.tools:
                 print(f"  - {tool.name}: {tool.description}")
 
-            # Call our calculator tool
+            # Calling th belnder execute code tool
             blender_code = """
 import bpy
 import bmesh
